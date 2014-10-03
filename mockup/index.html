@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>PC browser sample</title>
+<script type="text/javascript">
+function temporaryStop() {
+    var mvControlBtnObj = document.getElementById("mvControlBtn");
+    
+    if ("STOP" == mvControlBtnObj.value) {
+        mvControlBtn.value = "ReStart";
+    } else {
+        mvControlBtn.value = "STOP";
+    }
+}
+function doPlaySelectedMv() {
+    alert("coming soon...")
+}
+</script>
+</head>
+<body>
+        <table width="100%">
+            <tr height="500">
+                <td bgcolor="0x6495ed" align="center" colspan="6">
+                    Display MV.
+                </td>
+            </tr>
+            <tr>
+                <td width="150">
+                    <input type="Button" id="mvControlBtn" value="STOP" style="width:100px;htight:30px" onclick="temporaryStop()">
+                </td>
+                <td width="300">
+                    Next Song&nbsp;=>&nbsp;
+                    <span>Mother - Sound Horizon</span>
+                </td>
+                <td width="160">
+                    <select name="playList">
+                        <option value="0" selected>Sound Horizon</option>
+                        <option value="1">GUNSLINGER STRATOS</option>
+                        <option value="2">GUNSLINGER STRATOS2</option>
+                    </select>
+                </td>
+                <td width="140">
+                    <select name="mv">
+                        <option value="0">yodaka no hoshi</option>
+                        <option value="1" selected>Mother</option>
+                        <option value="2">Interview with Noel</option>
+                    </select>
+                </td>
+                <td width="150">
+                    <input type="Button" id="mvControlBtn" value="PLAY" style="width:100px;htight:30px" onclick="doPlaySelectedMv()">
+                </td>
+                <td>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>
